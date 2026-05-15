@@ -1,0 +1,56 @@
+.studentTopbar {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.studentTopbar-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+}
+
+.studentTopbar-left img {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+}
+
+.studentTopbar-left h2 {
+  font-size: 30px;
+
+  color: white;
+}
+
+.studentTopbar-left p {
+  color: #cbd5e1;
+
+  margin-top: 4px;
+}
+
+.studentLogout-btn {
+  padding: 14px 24px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.06);
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.studentLogout-btn:hover {
+  background: linear-gradient(to right, #7c3aed, #2563eb);
+}

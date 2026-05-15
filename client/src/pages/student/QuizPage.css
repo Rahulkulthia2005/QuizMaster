@@ -1,0 +1,212 @@
+.studentQuizPage {
+  min-height: 100vh;
+
+  padding: 50px 40px;
+
+  background: radial-gradient(circle at top left, #111827, #020617);
+
+  color: white;
+}
+
+/* LOADING */
+
+.quizLoading {
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background: radial-gradient(circle at top left, #111827, #020617);
+
+  color: #8b5cf6;
+
+  font-size: 36px;
+
+  font-weight: 700;
+}
+
+/* HEADER */
+
+.studentQuizHeader {
+  text-align: center;
+
+  margin-bottom: 45px;
+}
+
+.studentQuizHeader h1 {
+  font-size: 52px;
+
+  margin-bottom: 12px;
+}
+
+.studentQuizHeader p {
+  color: #cbd5e1;
+
+  font-size: 18px;
+}
+
+/* CONTAINER */
+
+.studentQuizContainer {
+  width: 100%;
+
+  max-width: 1100px;
+
+  margin: auto;
+}
+
+/* QUESTION CARD */
+
+.studentQuestionCard {
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 28px;
+
+  padding: 35px;
+
+  margin-bottom: 30px;
+
+  backdrop-filter: blur(12px);
+
+  transition: 0.3s ease;
+}
+
+.studentQuestionCard:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(139,92,246,0.35);
+}
+
+/* QUESTION */
+
+.studentQuestionCard h2 {
+  font-size: 28px;
+
+  margin-bottom: 28px;
+
+  line-height: 1.5;
+}
+
+/* OPTIONS */
+
+.studentOptions {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+/* OPTION */
+
+.studentOption {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  padding: 18px 20px;
+
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.04);
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.studentOption:hover {
+  background: rgba(139,92,246,0.12);
+
+  border-color: rgba(139,92,246,0.4);
+}
+
+/* RADIO */
+
+.studentOption input[type="radio"] {
+  width: 20px;
+
+  height: 20px;
+
+  accent-color: #8b5cf6;
+
+  cursor: pointer;
+}
+
+/* OPTION TEXT */
+
+.studentOption span {
+  font-size: 18px;
+
+  color: white;
+}
+
+/* SUBMIT BUTTON */
+
+.studentSubmitBtn {
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 18px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  background: linear-gradient(
+    to right,
+    #7c3aed,
+    #2563eb
+  );
+
+  color: white;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.35s ease;
+}
+
+.studentSubmitBtn:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0px 12px 30px rgba(139,92,246,0.35);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+  .studentQuizPage {
+    padding: 25px 18px;
+  }
+
+  .studentQuizHeader h1 {
+    font-size: 38px;
+  }
+
+  .studentQuestionCard {
+    padding: 25px 20px;
+  }
+
+  .studentQuestionCard h2 {
+    font-size: 22px;
+  }
+
+  .studentOption span {
+    font-size: 16px;
+  }
+}

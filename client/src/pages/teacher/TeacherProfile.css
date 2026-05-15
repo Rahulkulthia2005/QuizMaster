@@ -1,0 +1,234 @@
+.teacherProfilePage {
+  min-height: 100vh;
+
+  display: flex;
+
+  background: radial-gradient(circle at top left, #111827, #020617);
+
+  color: white;
+}
+
+/* MAIN */
+
+.teacherProfile-main {
+  flex: 1;
+
+  padding: 35px;
+
+  overflow-x: hidden;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center; /* CENTER CARD */
+}
+
+/* CARD */
+
+.teacherProfile-card {
+  width: 100%;
+
+  max-width: 850px; /* DECREASE WIDTH */
+
+  margin-top: 30px;
+
+  display: flex;
+
+  gap: 35px;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 30px;
+
+  padding: 35px;
+
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0px 12px 35px rgba(0,0,0,0.25);
+
+  transition: 0.35s ease;
+}
+
+.teacherProfile-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0px 15px 35px rgba(139,92,246,0.15);
+}
+
+/* IMAGE SECTION */
+
+.teacherProfile-imageSection {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+/* IMAGE */
+
+.teacherProfile-image {
+  width: 180px;
+
+  height: 180px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  border: 5px solid #8b5cf6;
+
+  box-shadow: 0px 0px 30px rgba(139,92,246,0.25);
+
+  transition: 0.35s ease;
+}
+
+.teacherProfile-image:hover {
+  transform: scale(1.05);
+}
+
+/* UPLOAD BUTTON */
+
+.teacherUploadBtn {
+  padding: 13px 22px;
+
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.06);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.teacherUploadBtn:hover {
+  background: rgba(255,255,255,0.12);
+
+  transform: translateY(-3px);
+}
+
+/* FORM */
+
+.teacherProfile-form {
+  flex: 1;
+
+  width: 100%;
+}
+
+/* INPUT BOX */
+
+.teacherProfile-inputBox {
+  margin-bottom: 25px;
+}
+
+.teacherProfile-inputBox label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #cbd5e1;
+
+  font-size: 16px;
+}
+
+.teacherProfile-inputBox input {
+  width: 100%;
+
+  padding: 16px 18px;
+
+  border-radius: 14px;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  background: rgba(255,255,255,0.04);
+
+  color: white;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition: 0.3s ease;
+}
+
+.teacherProfile-inputBox input:focus {
+  border-color: #8b5cf6;
+
+  box-shadow: 0px 0px 15px rgba(139,92,246,0.2);
+}
+
+.teacherProfile-inputBox input:disabled {
+  opacity: 0.7;
+
+  cursor: not-allowed;
+}
+
+/* BUTTON */
+
+.teacherSaveBtn {
+  padding: 15px 28px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    to right,
+    #7c3aed,
+    #2563eb
+  );
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.35s ease;
+}
+
+.teacherSaveBtn:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0px 10px 25px rgba(139,92,246,0.3);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+
+  .teacherProfilePage {
+    flex-direction: column;
+  }
+
+  .teacherProfile-main {
+    padding: 20px;
+  }
+
+  .teacherProfile-card {
+    flex-direction: column;
+
+    max-width: 100%;
+
+    padding: 30px 20px;
+  }
+
+  .teacherProfile-image {
+    width: 150px;
+
+    height: 150px;
+  }
+}

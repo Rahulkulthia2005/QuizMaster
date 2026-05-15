@@ -1,0 +1,65 @@
+.teacherRightbar {
+  width: 320px;
+
+  padding: 35px 20px;
+
+  border-left: 1px solid rgba(255,255,255,0.08);
+}
+
+/* CARD */
+
+.teacherPerformance,
+.teacherBadges {
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 28px;
+
+  padding: 28px;
+
+  margin-bottom: 25px;
+}
+
+/* TITLE */
+
+.teacherPerformance h2,
+.teacherBadges h2 {
+  margin-bottom: 20px;
+}
+
+/* CIRCLE */
+
+.teacherCircle {
+  width: 180px;
+
+  height: 180px;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  border: 12px solid #8b5cf6;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 42px;
+
+  font-weight: 700;
+}
+
+/* ACTIVITY */
+
+.teacherActivity {
+  padding: 16px;
+
+  border-radius: 16px;
+
+  background: rgba(255,255,255,0.04);
+
+  margin-bottom: 14px;
+}

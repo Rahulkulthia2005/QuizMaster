@@ -1,0 +1,130 @@
+.teacherTopbar {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 35px;
+}
+
+/* LEFT */
+
+.teacherTopbar-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+}
+
+/* PROFILE IMAGE */
+
+.teacherProfileImg {
+  width: 100px;
+
+  height: 100px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  border: 3px solid #8b5cf6;
+
+  box-shadow: 0px 0px 20px rgba(139,92,246,0.25);
+
+  transition: 0.35s ease;
+}
+
+.teacherProfileImg:hover {
+  transform: scale(1.05);
+}
+
+/* TEXT */
+
+.teacherTopbar-text h1 {
+  font-size: 40px;
+
+  margin-bottom: 8px;
+
+  color: white;
+}
+
+.teacherTopbar-text p {
+  color: #cbd5e1;
+
+  font-size: 16px;
+}
+
+/* RIGHT */
+
+.teacherTopbar-right {
+  display: flex;
+
+  align-items: center;
+}
+
+/* BUTTON */
+
+.teacherLogoutBtn {
+  padding: 14px 28px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  color: white;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.teacherLogoutBtn:hover {
+  background: linear-gradient(
+    to right,
+    #7c3aed,
+    #2563eb
+  );
+
+  transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+  .teacherTopbar {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .teacherTopbar-left {
+    align-items: center;
+  }
+
+  .teacherTopbar-text h1 {
+    font-size: 30px;
+  }
+
+  .teacherTopbar-text p {
+    font-size: 15px;
+  }
+
+  .teacherProfileImg {
+    width: 58px;
+
+    height: 58px;
+  }
+}

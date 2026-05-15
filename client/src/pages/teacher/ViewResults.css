@@ -1,0 +1,278 @@
+.viewResultsPage {
+  min-height: 100vh;
+
+  display: flex;
+
+  background: radial-gradient(circle at top left, #111827, #020617);
+
+  color: white;
+}
+
+/* MAIN */
+
+.viewResults-main {
+  flex: 1;
+
+  padding: 35px;
+
+  overflow-x: hidden;
+}
+
+/* CARD */
+
+.viewResults-card {
+  margin-top: 30px;
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 30px;
+
+  padding: 35px;
+
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0px 12px 35px rgba(0,0,0,0.25);
+}
+
+/* HEADER */
+
+.viewResults-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 35px;
+}
+
+.viewResults-header h1 {
+  font-size: 42px;
+
+  margin-bottom: 10px;
+}
+
+.viewResults-header p {
+  color: #cbd5e1;
+
+  font-size: 16px;
+}
+
+.viewResults-header span {
+  color: #8b5cf6;
+
+  font-size: 17px;
+
+  font-weight: 600;
+}
+
+/* LOADING */
+
+.viewResults-loading {
+  width: 100%;
+
+  padding: 80px 20px;
+
+  text-align: center;
+
+  font-size: 30px;
+
+  color: #8b5cf6;
+
+  font-weight: 700;
+}
+
+/* EMPTY */
+
+.viewResults-empty {
+  width: 100%;
+
+  padding: 80px 20px;
+
+  text-align: center;
+}
+
+.viewResults-empty h2 {
+  font-size: 36px;
+
+  margin-bottom: 14px;
+}
+
+.viewResults-empty p {
+  color: #cbd5e1;
+
+  font-size: 17px;
+}
+
+/* TABLE CONTAINER */
+
+.viewResults-tableContainer {
+  width: 100%;
+
+  overflow-x: auto;
+
+  border-radius: 24px;
+}
+
+/* TABLE */
+
+.viewResults-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 900px;
+}
+
+/* HEAD */
+
+.viewResults-table thead {
+  background: rgba(255,255,255,0.04);
+}
+
+.viewResults-table th {
+  padding: 22px;
+
+  text-align: left;
+
+  color: #8b5cf6;
+
+  font-size: 17px;
+
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* BODY */
+
+.viewResults-table td {
+  padding: 22px;
+
+  border-top: 1px solid rgba(255,255,255,0.06);
+
+  font-size: 16px;
+}
+
+.viewResults-table tbody tr {
+  transition: 0.3s ease;
+}
+
+.viewResults-table tbody tr:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+/* SCORE */
+
+.scoreText {
+  color: #8b5cf6;
+
+  font-weight: 700;
+}
+
+/* PERCENTAGE */
+
+.teacherPercentageBox {
+  width: 180px;
+
+  height: 16px;
+
+  border-radius: 30px;
+
+  background: rgba(255,255,255,0.08);
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.teacherPercentageFill {
+  height: 100%;
+
+  border-radius: 30px;
+
+  background: linear-gradient(
+    to right,
+    #7c3aed,
+    #2563eb
+  );
+}
+
+.teacherPercentageBox span {
+  position: absolute;
+
+  top: -30px;
+
+  right: 0;
+
+  font-size: 14px;
+
+  color: #cbd5e1;
+}
+
+/* STATUS */
+
+.excellent,
+.average,
+.poor {
+  padding: 8px 18px;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  display: inline-block;
+}
+
+.excellent {
+  background: rgba(34,197,94,0.15);
+
+  color: #22c55e;
+}
+
+.average {
+  background: rgba(250,204,21,0.15);
+
+  color: #facc15;
+}
+
+.poor {
+  background: rgba(239,68,68,0.15);
+
+  color: #ef4444;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+
+  .viewResultsPage {
+    flex-direction: column;
+  }
+
+  .viewResults-main {
+    padding: 20px;
+  }
+
+  .viewResults-card {
+    padding: 25px 20px;
+  }
+
+  .viewResults-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .viewResults-header h1 {
+    font-size: 34px;
+  }
+
+  .viewResults-table {
+    min-width: 850px;
+  }
+}

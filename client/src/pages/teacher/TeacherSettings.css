@@ -1,0 +1,161 @@
+.teacherSettingsPage {
+  min-height: 100vh;
+
+  display: flex;
+
+  background: radial-gradient(circle at top left, #111827, #020617);
+
+  color: white;
+}
+
+/* MAIN */
+
+.teacherSettings-main {
+  flex: 1;
+
+  padding: 35px;
+
+  overflow-x: hidden;
+}
+
+/* CARD */
+
+.teacherSettings-card {
+  margin-top: 30px;
+
+  max-width: 700px;
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 30px;
+
+  padding: 40px;
+
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0px 12px 35px rgba(0,0,0,0.25);
+  margin-left: 300px;
+}
+
+/* TITLE */
+
+.teacherSettings-card h1 {
+  font-size: 42px;
+
+  margin-bottom: 10px;
+}
+
+.teacherSettings-card p {
+  color: #cbd5e1;
+
+  font-size: 17px;
+
+  margin-bottom: 35px;
+}
+
+/* FORM */
+
+.teacherSettings-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 25px;
+}
+
+/* INPUT BOX */
+
+.teacherSettings-inputBox {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.teacherSettings-inputBox label {
+  margin-bottom: 10px;
+
+  color: #cbd5e1;
+
+  font-size: 16px;
+}
+
+.teacherSettings-inputBox input {
+  width: 100%;
+
+  padding: 16px 18px;
+
+  border-radius: 14px;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  background: rgba(255,255,255,0.04);
+
+  color: white;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition: 0.3s ease;
+}
+
+.teacherSettings-inputBox input:focus {
+  border-color: #8b5cf6;
+
+  box-shadow: 0px 0px 15px rgba(139,92,246,0.2);
+}
+
+/* BUTTON */
+
+.teacherSettings-btn {
+  padding: 16px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    to right,
+    #7c3aed,
+    #2563eb
+  );
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.35s ease;
+}
+
+.teacherSettings-btn:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0px 10px 25px rgba(139,92,246,0.3);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+
+  .teacherSettingsPage {
+    flex-direction: column;
+  }
+
+  .teacherSettings-main {
+    padding: 20px;
+  }
+
+  .teacherSettings-card {
+    padding: 30px 20px;
+  }
+
+  .teacherSettings-card h1 {
+    font-size: 34px;
+  }
+}

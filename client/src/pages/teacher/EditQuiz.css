@@ -1,0 +1,257 @@
+.editQuizPage {
+  min-height: 100vh;
+
+  display: flex;
+
+  background: radial-gradient(circle at top left, #111827, #020617);
+
+  color: white;
+}
+
+/* MAIN */
+
+.editQuiz-main {
+  flex: 1;
+
+  padding: 30px;
+
+  overflow-x: hidden;
+}
+
+/* CONTAINER */
+
+.editQuiz-container {
+  display: grid;
+
+  grid-template-columns: 320px 1fr;
+
+  gap: 25px;
+
+  margin-top: 30px;
+}
+
+/* LEFT */
+
+.editQuiz-list {
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 28px;
+
+  padding: 25px;
+
+  height: fit-content;
+}
+
+.editQuiz-list h2 {
+  margin-bottom: 25px;
+
+  font-size: 30px;
+}
+
+/* QUIZ ITEM */
+
+.editQuiz-item {
+  padding: 20px;
+
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.04);
+
+  margin-bottom: 18px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.editQuiz-item:hover,
+.activeQuiz {
+  border: 1px solid rgba(139,92,246,0.5);
+
+  background: rgba(139,92,246,0.12);
+
+  transform: translateY(-4px);
+}
+
+.editQuiz-item h3 {
+  margin-bottom: 8px;
+
+  font-size: 20px;
+}
+
+.editQuiz-item p {
+  color: #cbd5e1;
+}
+
+/* RIGHT */
+
+.editQuiz-editor {
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 28px;
+
+  padding: 30px;
+}
+
+/* HEADER */
+
+.editQuiz-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.editQuiz-header h1 {
+  font-size: 40px;
+}
+
+.editQuiz-header button {
+  padding: 14px 28px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    to right,
+    #7c3aed,
+    #2563eb
+  );
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.editQuiz-header button:hover {
+  transform: translateY(-3px);
+}
+
+/* INPUT */
+
+.editQuiz-inputBox {
+  margin-bottom: 28px;
+}
+
+.editQuiz-inputBox label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #cbd5e1;
+}
+
+.editQuiz-inputBox input,
+.editQuestion-card input {
+  width: 100%;
+
+  padding: 15px 18px;
+
+  border-radius: 14px;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  background: rgba(255,255,255,0.04);
+
+  color: white;
+
+  outline: none;
+
+  margin-bottom: 15px;
+
+  transition: 0.3s ease;
+}
+
+.editQuiz-inputBox input:focus,
+.editQuestion-card input:focus {
+  border-color: #8b5cf6;
+}
+
+/* QUESTION CARD */
+
+.editQuestion-card {
+  background: rgba(255,255,255,0.04);
+
+  border-radius: 24px;
+
+  padding: 25px;
+
+  margin-bottom: 25px;
+
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.editQuestion-card h3 {
+  margin-bottom: 20px;
+
+  color: #8b5cf6;
+}
+
+/* EMPTY */
+
+.editQuiz-empty {
+  width: 100%;
+
+  height: 500px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+.editQuiz-empty h2 {
+  font-size: 38px;
+
+  margin-bottom: 15px;
+}
+
+.editQuiz-empty p {
+  color: #cbd5e1;
+
+  font-size: 17px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+
+  .editQuizPage {
+    flex-direction: column;
+  }
+
+  .editQuiz-main {
+    padding: 20px;
+  }
+
+  .editQuiz-container {
+    grid-template-columns: 1fr;
+  }
+
+  .editQuiz-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .editQuiz-header h1 {
+    font-size: 32px;
+  }
+}

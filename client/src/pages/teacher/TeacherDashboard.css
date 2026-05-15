@@ -1,0 +1,195 @@
+.teacherDashboard {
+  min-height: 100vh;
+
+  display: flex;
+
+  background: radial-gradient(circle at top left, #111827, #020617);
+
+  color: white;
+
+  overflow-x: hidden;
+}
+
+/* MAIN */
+
+.teacherDashboard-main {
+  flex: 1;
+
+  padding: 35px;
+
+  overflow-y: auto;
+}
+
+/* SECTION */
+
+.teacherDashboard-section {
+  margin-top: 35px;
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 30px;
+
+  padding: 30px;
+
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0px 12px 35px rgba(0,0,0,0.25);
+}
+
+/* SECTION HEADER */
+
+.teacherSection-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 28px;
+}
+
+.teacherSection-header h2 {
+  font-size: 36px;
+
+  color: white;
+}
+
+.teacherSection-header span {
+  color: #8b5cf6;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.teacherSection-header span:hover {
+  color: white;
+}
+
+/* QUIZ CARD */
+
+.teacherQuiz-card {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 24px 26px;
+
+  border-radius: 22px;
+
+  background: rgba(255,255,255,0.04);
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  margin-bottom: 20px;
+
+  transition: 0.35s ease;
+}
+
+.teacherQuiz-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(139,92,246,0.45);
+
+  box-shadow: 0px 10px 25px rgba(139,92,246,0.15);
+}
+
+/* QUIZ TEXT */
+
+.teacherQuiz-card h3 {
+  font-size: 28px;
+
+  margin-bottom: 10px;
+
+  color: white;
+}
+
+.teacherQuiz-card p {
+  color: #cbd5e1;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+/* BUTTON */
+
+.teacherQuiz-card button {
+  padding: 14px 26px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    to right,
+    #7c3aed,
+    #2563eb
+  );
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.35s ease;
+}
+
+.teacherQuiz-card button:hover {
+  transform: scale(1.05);
+
+  box-shadow: 0px 10px 25px rgba(139,92,246,0.3);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+
+  .teacherDashboard {
+    flex-direction: column;
+  }
+
+  .teacherDashboard-main {
+    padding: 25px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .teacherSection-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 12px;
+  }
+
+  .teacherSection-header h2 {
+    font-size: 30px;
+  }
+
+  .teacherQuiz-card {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .teacherQuiz-card h3 {
+    font-size: 24px;
+  }
+
+  .teacherQuiz-card button {
+    width: 100%;
+  }
+}

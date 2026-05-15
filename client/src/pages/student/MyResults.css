@@ -1,0 +1,294 @@
+/* MAIN LAYOUT */
+
+.myResultsLayout {
+  min-height: 100vh;
+
+  display: flex;
+
+  background: radial-gradient(circle at top left, #111827, #020617);
+
+  color: white;
+}
+
+/* MAIN PAGE */
+
+.myResultsPage {
+  flex: 1;
+
+  padding: 45px 40px;
+
+  overflow-x: hidden;
+}
+
+/* HEADER */
+
+.myResultsHeader {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.myResultsHeader h1 {
+  font-size: 48px;
+
+  margin-bottom: 12px;
+
+  color: white;
+
+  font-weight: 700;
+}
+
+.myResultsHeader p {
+  color: #cbd5e1;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+}
+
+/* LOADING */
+
+.myResultsLoading {
+  width: 100%;
+
+  padding: 100px 20px;
+
+  text-align: center;
+
+  font-size: 30px;
+
+  font-weight: 600;
+
+  color: #8b5cf6;
+}
+
+/* EMPTY STATE */
+
+.myResultsEmpty {
+  width: 100%;
+
+  padding: 70px 30px;
+
+  text-align: center;
+
+  border-radius: 30px;
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.25);
+}
+
+.myResultsEmpty h2 {
+  font-size: 38px;
+
+  margin-bottom: 16px;
+
+  color: white;
+}
+
+.myResultsEmpty p {
+  color: #cbd5e1;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+}
+
+/* TABLE CONTAINER */
+
+.myResultsTableContainer {
+  width: 100%;
+
+  overflow-x: auto;
+
+  border-radius: 30px;
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0px 15px 40px rgba(0,0,0,0.28);
+}
+
+/* TABLE */
+
+.myResultsTable {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 1000px;
+}
+
+/* TABLE HEADER */
+
+.myResultsTable thead {
+  background: rgba(255,255,255,0.04);
+}
+
+.myResultsTable th {
+  padding: 24px 22px;
+
+  text-align: left;
+
+  color: #8b5cf6;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+/* TABLE BODY */
+
+.myResultsTable td {
+  padding: 24px 22px;
+
+  border-top: 1px solid rgba(255,255,255,0.06);
+
+  color: white;
+
+  font-size: 16px;
+}
+
+.myResultsTable tbody tr {
+  transition: 0.3s ease;
+}
+
+.myResultsTable tbody tr:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+/* SCORE */
+
+.scoreText {
+  color: #8b5cf6;
+
+  font-weight: 700;
+
+  font-size: 18px;
+}
+
+/* PERCENTAGE BAR */
+
+.percentageBox {
+  width: 180px;
+
+  height: 16px;
+
+  border-radius: 30px;
+
+  background: rgba(255,255,255,0.08);
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.percentageFill {
+  height: 100%;
+
+  border-radius: 30px;
+
+  background: linear-gradient(to right, #7c3aed, #2563eb);
+
+  transition: width 0.5s ease;
+}
+
+.percentageBox span {
+  position: absolute;
+
+  top: -30px;
+
+  right: 0;
+
+  font-size: 14px;
+
+  color: #cbd5e1;
+}
+
+/* STATUS */
+
+.excellent,
+.average,
+.poor {
+  padding: 8px 18px;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  display: inline-block;
+}
+
+.excellent {
+  background: rgba(34,197,94,0.15);
+
+  color: #22c55e;
+}
+
+.average {
+  background: rgba(250,204,21,0.15);
+
+  color: #facc15;
+}
+
+.poor {
+  background: rgba(239,68,68,0.15);
+
+  color: #ef4444;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+
+  .myResultsLayout {
+    flex-direction: column;
+  }
+
+  .myResultsPage {
+    padding: 30px 20px;
+  }
+
+  .myResultsHeader {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .myResultsHeader h1 {
+    font-size: 38px;
+  }
+
+  .myResultsHeader p {
+    font-size: 16px;
+  }
+
+  .myResultsEmpty {
+    padding: 50px 20px;
+  }
+
+  .myResultsEmpty h2 {
+    font-size: 30px;
+  }
+
+  .myResultsTable {
+    min-width: 850px;
+  }
+}

@@ -1,0 +1,164 @@
+.studentSettings {
+  min-height: 100vh;
+
+  display: flex;
+
+  background: radial-gradient(circle at top left, #111827, #020617);
+
+  color: white;
+}
+
+/* CONTENT */
+
+.studentSettings-content {
+  flex: 1;
+
+  padding: 40px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-start;
+}
+
+/* CARD */
+
+.studentSettings-card {
+  width: 100%;
+
+  max-width: 700px;
+
+  margin-top: 20px;
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 30px;
+
+  padding: 45px;
+
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0px 15px 40px rgba(0,0,0,0.3);
+}
+
+/* TITLE */
+
+.studentSettings-card h1 {
+  font-size: 42px;
+
+  margin-bottom: 12px;
+}
+
+.studentSettings-subtitle {
+  color: #cbd5e1;
+
+  margin-bottom: 35px;
+
+  font-size: 17px;
+}
+
+/* FORM */
+
+.studentSettings-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 25px;
+}
+
+/* INPUT BOX */
+
+.studentSettings-inputBox {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.studentSettings-inputBox label {
+  margin-bottom: 10px;
+
+  font-size: 16px;
+
+  color: #cbd5e1;
+}
+
+.studentSettings-inputBox input {
+  width: 100%;
+
+  padding: 16px 18px;
+
+  border-radius: 14px;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  background: rgba(255,255,255,0.04);
+
+  color: white;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition: 0.3s ease;
+}
+
+.studentSettings-inputBox input:focus {
+  border-color: #8b5cf6;
+
+  box-shadow: 0px 0px 15px rgba(139,92,246,0.2);
+}
+
+/* BUTTON */
+
+.studentSettings-btn {
+  padding: 16px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: linear-gradient(to right, #7c3aed, #2563eb);
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  margin-top: 10px;
+
+  transition: 0.3s ease;
+}
+
+.studentSettings-btn:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0px 10px 25px rgba(139,92,246,0.35);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+  .studentSettings {
+    flex-direction: column;
+  }
+
+  .studentSettings-content {
+    padding: 20px;
+  }
+
+  .studentSettings-card {
+    padding: 30px 20px;
+  }
+
+  .studentSettings-card h1 {
+    font-size: 34px;
+  }
+}

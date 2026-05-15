@@ -1,0 +1,50 @@
+.teacherSidebar {
+  width: 280px;
+
+  min-height: 100vh;
+
+  padding: 35px 22px;
+
+  border-right: 1px solid rgba(255,255,255,0.08);
+
+  background: rgba(255,255,255,0.03);
+}
+
+/* LOGO */
+
+.teacherSidebar-logo {
+  font-size: 42px;
+
+  margin-bottom: 55px;
+}
+
+.teacherSidebar-logo span {
+  color: #8b5cf6;
+}
+
+/* MENU */
+
+.teacherSidebar-menu {
+  list-style: none;
+}
+
+.teacherSidebar-menu li {
+  padding: 18px 20px;
+
+  border-radius: 14px;
+
+  margin-bottom: 12px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+.teacherSidebar-link {
+  text-decoration: none;
+
+  color: white;
+}
+.teacherSidebar-menu li:hover,
+.teacherSidebar-menu .active {
+  background: linear-gradient(to right, #7c3aed, #2563eb);
+}

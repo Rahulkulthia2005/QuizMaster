@@ -1,0 +1,188 @@
+.previousQuizzesPage {
+  min-height: 100vh;
+
+  display: flex;
+
+  background: radial-gradient(circle at top left, #111827, #020617);
+
+  color: white;
+}
+
+/* RIGHT SIDE */
+
+.previousQuizzes-content {
+  flex: 1;
+
+  padding: 40px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-start;
+}
+
+/* MAIN CARD */
+
+.previousQuizzes-card {
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin-top: 20px;
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 30px;
+
+  padding: 40px;
+
+  backdrop-filter: blur(12px);
+}
+
+/* HEADER */
+
+.studentSection-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 35px;
+}
+
+.studentSection-header h2 {
+  font-size: 40px;
+
+  color: white;
+}
+
+.studentSection-header span {
+  color: #8b5cf6;
+
+  font-size: 18px;
+}
+
+/* EMPTY */
+
+.noQuizText {
+  color: #cbd5e1;
+
+  font-size: 18px;
+}
+
+/* TABLE */
+
+.studentQuiz-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  overflow: hidden;
+}
+
+.studentQuiz-table thead {
+  background: rgba(255,255,255,0.04);
+}
+
+.studentQuiz-table th {
+  padding: 20px;
+
+  text-align: left;
+
+  color: #8b5cf6;
+
+  font-size: 18px;
+}
+
+.studentQuiz-table td {
+  padding: 22px 20px;
+
+  border-top: 1px solid rgba(255,255,255,0.06);
+
+  font-size: 16px;
+
+  color: white;
+}
+
+.studentQuiz-table tbody tr {
+  transition: 0.3s ease;
+}
+
+.studentQuiz-table tbody tr:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+/* SCORE COLORS */
+
+.studentGreen {
+  color: #22c55e;
+
+  font-weight: 600;
+}
+
+.studentYellow {
+  color: #facc15;
+
+  font-weight: 600;
+}
+
+.studentRed {
+  color: #ef4444;
+
+  font-weight: 600;
+}
+
+/* STATUS */
+
+.completedStatus {
+  padding: 8px 18px;
+
+  border-radius: 30px;
+
+  background: rgba(34,197,94,0.15);
+
+  color: #22c55e;
+
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+  .previousQuizzesPage {
+    flex-direction: column;
+  }
+
+  .previousQuizzes-content {
+    padding: 20px;
+  }
+
+  .previousQuizzes-card {
+    padding: 25px 20px;
+
+    overflow-x: auto;
+  }
+
+  .studentSection-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 10px;
+  }
+
+  .studentSection-header h2 {
+    font-size: 32px;
+  }
+
+  .studentQuiz-table {
+    min-width: 700px;
+  }
+}

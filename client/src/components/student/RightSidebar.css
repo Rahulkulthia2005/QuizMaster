@@ -1,0 +1,84 @@
+.studentRightSidebar {
+  width: 320px;
+
+  padding: 25px 20px;
+
+  border-left: 1px solid rgba(255,255,255,0.08);
+}
+
+.studentPerformance-card,
+.studentBadges-card {
+  padding: 25px;
+
+  border-radius: 22px;
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  margin-bottom: 25px;
+}
+
+.studentPerformance-card h3,
+.studentBadges-card h3 {
+  color: white;
+
+  margin-bottom: 25px;
+}
+
+/* CIRCLE */
+
+.studentCircle {
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+
+  border: 12px solid #8b5cf6;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  font-size: 38px;
+
+  font-weight: 700;
+
+  margin: auto;
+
+  color: white;
+
+  box-shadow: 0px 0px 35px rgba(139,92,246,0.3);
+}
+
+/* BADGES */
+
+.studentBadge-item {
+  padding: 16px;
+
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.04);
+
+  margin-bottom: 15px;
+
+  color: white;
+
+  transition: 0.3s ease;
+}
+
+.studentBadge-item:hover {
+  transform: translateX(5px);
+
+  border: 1px solid rgba(139,92,246,0.4);
+}
+
+@media screen and (max-width: 1200px) {
+
+  .studentRightSidebar {
+    width: 100%;
+
+    border-left: none;
+  }
+}
