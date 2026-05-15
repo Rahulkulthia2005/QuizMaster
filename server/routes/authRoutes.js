@@ -29,6 +29,10 @@ const upload = multer({
   storage
 });
 
+/* ================= FRONTEND URL ================= */
+const FRONTEND_URL =
+  "https://quiz-master-dun.vercel.app";
+
 /* ================= OTP ================= */
 router.post("/send-otp", sendOTP);
 
@@ -67,24 +71,24 @@ router.get(
   "/google/callback",
   passport.authenticate("google", {
     failureRedirect:
-      "http://localhost:3000/login?error=usernotfound"
+      `${FRONTEND_URL}/login?error=usernotfound`
   }),
   (req, res) => {
 
     if (req.user.role === "student") {
       return res.redirect(
-        "http://localhost:3000/student"
+        `${FRONTEND_URL}/student`
       );
     }
 
     if (req.user.role === "teacher") {
       return res.redirect(
-        "http://localhost:3000/teacher"
+        `${FRONTEND_URL}/teacher`
       );
     }
 
     return res.redirect(
-      "http://localhost:3000/login?error=usernotfound"
+      `${FRONTEND_URL}/login?error=usernotfound`
     );
   }
 );
