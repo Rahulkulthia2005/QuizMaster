@@ -29,8 +29,7 @@ app.use(
     origin: "https://quiz-master-dun.vercel.app",
     credentials: true,
   })
-);;
-
+);
 /* Session */
 app.use(
   session({
