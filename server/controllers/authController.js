@@ -37,12 +37,12 @@ exports.sendOTP = async (req, res) => {
 
     otpStore[email] = otp;
 
-    await transporter.sendMail({
-      from: process.env.EMAIL_USER,
-      to: email,
-      subject: "Quiz App OTP Verification",
-      text: `Your OTP is: ${otp}`
-    });
+   await transporter.sendMail({
+  from: `"QuizMaster" <${process.env.EMAIL_USER}>`,
+  to: email,
+  subject: "Quiz App OTP Verification",
+  text: `Your OTP is: ${otp}`
+  });
 
     res.status(200).json({
       message: "OTP sent successfully"
