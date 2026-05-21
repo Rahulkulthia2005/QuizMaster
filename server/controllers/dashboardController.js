@@ -36,12 +36,7 @@ exports.getTeacherStats =
                 100,
             0
           );
-
-        averageScore =
-          Math.round(
-            totalPercentage /
-              results.length
-          );
+        averageScore = Math.round(totalPercentage /results.length);
       }
 
       res.status(200).json({
